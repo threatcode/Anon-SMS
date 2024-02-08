@@ -27,8 +27,8 @@ b='\033[1m'
 W = '\033[0m'
 colors = ['\033[1;31m', '\033[1;32m', '\033[1;33m', '\033[1;34m', '\033[1;35m', '\033[1;36m']
 
-# The Credit For This Code Goes To Panda Hackers https://github.com/HACK3RY2J/
-# And The Contributors Mentioned At https://github.com/HACK3RY2J/ANon-SMS/
+# The Credit For This Code Goes To Panda Hackers https://github.com/THREATCODE/
+# And The Contributors Mentioned At https://github.com/THREATCODE/ANon-SMS/
 # If You Wanna Take Credits, Please Look Yourself Again!!
 
 def clr():
@@ -49,7 +49,7 @@ def banner():
      \033[0m██        \033[92m▒▒\033[0m██                                   \033[91mV1.4 \033[0m██\033[92m▒▒        \033[0m██
      \033[0m██          \033[92m▒▒\033[0m████████████████████████████████████████\033[92m▒▒          \033[0m██
      \033[0m██            \033[92m▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒            \033[0m██
-     \033[0m██     \033[94mCoded by: https://github.com/HACK3RY2J                     \033[0m██
+     \033[0m██     \033[94mCoded by: https://github.com/THREATCODE                     \033[0m██
      \033[0m██     \033[94mYoutube : https://www.youtube.com/c/PandaHackers           \033[0m██
      \033[0m██   \033[94mInstagram : https://instagram.com/Panda_Hackers_Official     \033[0m██
      \033[0m██                                                                ██
@@ -74,7 +74,7 @@ def Track() :
 def update():
     stuff_to_update = ['send.py', 'Run.sh', '.version']
     for fl in stuff_to_update:
-        dat = urllib.request.urlopen("https://raw.githubusercontent.com/HACK3RY2J/Anon-SMS/master/" + fl).read()
+        dat = urllib.request.urlopen("https://raw.githubusercontent.com/THREATCODE/Anon-SMS/master/" + fl).read()
         file = open(fl, 'wb')
         file.write(dat)
         file.close()
@@ -92,7 +92,7 @@ except Exception:
     input('Exiting....\n Press Enter To Exit....')
     exit()
 print('\tChecking For Updates...')
-ver = urllib.request.urlopen("https://raw.githubusercontent.com/HACK3RY2J/Anon-SMS/master/.version").read().decode('utf-8')
+ver = urllib.request.urlopen("https://raw.githubusercontent.com/THREATCODE/Anon-SMS/master/.version").read().decode('utf-8')
 verl = ''
 try:
     verl = open(".version", 'r').read()
@@ -106,7 +106,7 @@ print("Congratulation")
 print("Your Version is Up-To-Date")
 print('\n\tStarting Anon-SMS...\n')
 try:
-    noti = urllib.request.urlopen("https://raw.githubusercontent.com/HACK3RY2J/Anon-SMS/master/.notify").read().decode('utf-8')
+    noti = urllib.request.urlopen("https://raw.githubusercontent.com/THREATCODE/Anon-SMS/master/.notify").read().decode('utf-8')
     if len(noti) > 10:
         print('\nNotification : ' + noti + '\n')
 except Exception:
